@@ -8,7 +8,6 @@ export function Details() {
       <Header />
 
       <Button title="Entrar" />
-      >
     </Container>
   )
 }
