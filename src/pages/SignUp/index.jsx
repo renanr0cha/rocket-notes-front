@@ -1,20 +1,28 @@
-import {  FiMail, FiLock } from "react-icons/fi"
+import { FiUser, FiMail, FiLock } from "react-icons/fi"
 import { Background, Container, Form } from "./styles";
 
 import { Input } from "../../components/Input"
 import { Button } from "../../components/Button"
 
-export function SignIn() {
+export function SignUp() {
   return(
     <Container>
+      <Background />
+
       <Form>
         <h1>Rocketnotes</h1>
         <p>Aplicação para salvar e gerenciar seus links úteis</p>
 
-        <h2>Faça seu login</h2>
+        <h2>Crie sua conta</h2>
 
         <Input 
-          placeholder="E-mail"
+          placeholder="Nome"s
+          type="text"
+          icon={FiUser}
+        />
+
+        <Input 
+          placeholder="E-mail"s
           type="text"
           icon={FiMail}
         />
@@ -25,12 +33,10 @@ export function SignIn() {
           icon={FiLock}
         />
 
-        <Button title="Entrar"/>
+        <Button title="Cadastrar"/>
 
-        <a href="#">Criar conta</a>
+        <a href="#">Voltar para o Login</a>
       </Form>
-
-      <Background />
     </Container>
   )
 }
